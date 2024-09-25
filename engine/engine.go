@@ -38,6 +38,14 @@ var (
 	_defaultStack *stack.Stack
 )
 
+func StartReturn() error {
+     return start()
+}
+
+func StopReturn() error {
+     return stop()
+}
+
 // Start starts the default engine up.
 func Start() {
 	if err := start(); err != nil {
